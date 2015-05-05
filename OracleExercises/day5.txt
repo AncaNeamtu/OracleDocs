@@ -1,0 +1,13 @@
+select *FROM A
+MINUS                      //aduce ce e in A si nu e in B
+select *FROM B
+
+--MINUS,UNION ALL, INTERSECT, UNION INTRODUCE SI UN DISTINCT (lucreaza ca joinurile)
+--TRUNCATE are commit implicit
+--DML:INSERT, UPDATE,DELETE,MERGE(face insert sau update in fct de ce gaseste in tabela - daca gaseste col face update si daca nu o gaseste face insert);
+--DDL: CREATE,ALTER,DROP,TRUNCATE;-au commit implicit
+--CONSTRAINTS: not null; unique(poate sa fie null); primary(not null); foreign;check;
+--ON CASCADE DELETE(cand se sterg informatii din tab parinte se sterg si din tab copil);
+--TEMPORARY TABLE -vizibile numai in sesiunea userului respectiv
+
+
